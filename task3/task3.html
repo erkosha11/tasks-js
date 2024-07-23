@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <th>Значение 1</th>
+          <th>Значение 2</th>
+          <th>Значение 3</th>
+          <th>Значение 4</th>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              id="input1"
+              class="input__cell"
+              oninput="formatAndSum()"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="input2"
+              class="input__cell"
+              oninput="formatAndSum()"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="input3"
+              class="input__cell"
+              oninput="formatAndSum()"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="input4"
+              class="input__cell"
+              oninput="formatAndSum()"
+            />
+          </td>
+        </tr>
+      </table>
+      <div class="sum__container">
+        <label for="sum">Сумма</label>
+        <input type="text" id="sum" class="input__cell sum__input" readonly />
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

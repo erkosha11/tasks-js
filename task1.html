@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 21cm;
+        height: 29.7cm;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid #000;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .title h1 {
+        font-size: 24px;
+        margin: 70px 0 0 0;
+      }
+      h3 {
+        margin: 0;
+      }
+      .table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .table .title {
+        width: 80%;
+      }
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+        font-size: 12px;
+      }
+      th,
+      td {
+        border: 2px solid #000;
+        padding: 2px;
+        text-align: center;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .flex-container_two {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+      .bold {
+        font-weight: bold;
+      }
+      .title__table td {
+        text-align: left;
+        padding-left: 25px;
+      }
+      .italic__font {
+        font-style: italic;
+      }
+      .left__table {
+        text-align: left !important;
+      }
+      .center__table {
+        text-align: center !important;
+      }
+      .right__table td {
+        text-align: right;
+      }
+      .borderleft_table {
+        border-left: none;
+      }
+      .bordertop_table {
+        border-top: none;
+      }
+      .borderright_table {
+        border-right: none;
+      }
+      .borderbottom_table {
+        border-bottom: none;
+      }
+      .table__border_none {
+        border: none;
+      }
+      .table__superleft {
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+      }
+      .table__superright {
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+      }
+      .height__table {
+        height: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Акт сверки</h1>
+        <p>Текст Заголовка</p>
+      </div>
+      <div class="table">
+        <div class="title">
+          <p class="left__table">Таблица сверки</p>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">По данным ТОО "Рога и копыта", KZT</th>
+              <th colspan="4">По данным ТОО "Какао-Какао", KZT</th>
+            </tr>
+            <tr>
+              <th>Дата</th>
+              <th>Документ</th>
+              <th>Дебет</th>
+              <th>Кредит</th>
+              <th>Дата</th>
+              <th>Документ</th>
+              <th>Дебет</th>
+              <th>Кредит</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <div class="flex-container">
+                  <span>10.000,00</span>
+                  <span>01.01.2023</span>
+                </div>
+              </td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td colspan="2">
+                <div class="flex-container">
+                  <span>5.000,00</span>
+                  <span>01.01.2023</span>
+                </div>
+              </td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr class="title__table">
+              <td colspan="8">Договор А-1234-56</td>
+            </tr>
+            <tr class="right__table">
+              <td colspan="2">Сальдо начальное</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td colspan="2">Сальдо начальное</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr class="right__table">
+              <td>01.01.2023</td>
+              <td class="center__table">AAA</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td>01.01.2023</td>
+              <td class="center__table">БББ</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr class="right__table">
+              <td colspan="2">Обороты по договору</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td colspan="2">Обороты по договору</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr class="right__table">
+              <td class="borderbottom_table" colspan="2">Сальдо конечное</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td class="borderbottom_table" colspan="2">Сальдо конечное</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr>
+              <td class="bordertop_table"></td>
+              <td class="bordertop_table left__table italic__font">
+                А-123/4-56
+              </td>
+              <td></td>
+              <td></td>
+              <td class="bordertop_table"></td>
+              <td class="bordertop_table left__table italic__font">
+                А-123/4-56
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="height__table">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="right__table">
+              <td class="left__table bold" colspan="2">Обороты за период</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td class="left__table bold" colspan="2">Обороты за период</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+            <tr class="right__table">
+              <td class="borderright_table left__table bold">
+                Сальдо на <br />
+                конец
+              </td>
+              <td class="borderleft_table bold">01.01.2023</td>
+              <td>0,00</td>
+              <td>0,00</td>
+              <td class="borderright_table left__table bold">
+                Сальдо на <br />
+                конец
+              </td>
+              <td class="borderleft_table bold">01.01.2023</td>
+              <td>0,00</td>
+              <td>0,00</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table__border_none">
+          <tbody>
+            <tr>
+              <td class="table__superleft">По данным ТОО "Рога и копыта"</td>
+              <td class="table__superright">По данным ТОО "Рога и копыта"</td>
+            </tr>
+            <tr>
+              <td class="table__superleft left__table bold">
+                Результаты Сверки "
+              </td>
+              <td class="table__superright left__table bold">
+                Результаты Сверки "
+              </td>
+            </tr>
+            <tr class="right__table">
+              <td class="table__superleft table__superright bold">
+                <h3>Итог Сверки</h3>
+              </td>
+            </tr>
+            <tr>
+              <td class="table__superleft left__table">
+                <p>От ТОО "Рога и копыта"</p>
+              </td>
+              <td class="table__superright left__table">
+                <p>От ТОО "Рога и копыта"</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="height__table table__superleft left__table"></td>
+              <td class="height__table table__superright left__table"></td>
+            </tr>
+
+            <tr>
+              <td class="table__superleft left__table">Должность</td>
+              <td class="table__superright left__table">Должность</td>
+            </tr>
+
+            <tr>
+              <td class="height__table table__superleft left__table"></td>
+              <td class="height__table table__superright left__table"></td>
+            </tr>
+            <tr>
+              <td colspan="1" class="table__superleft left__table">
+                ___________ФИО Представителя
+              </td>
+              <td class="table__superright left__table">
+                ___________ФИО Представителя
+              </td>
+            </tr>
+            <tr>
+              <td class="height__table table__superleft left__table"></td>
+              <td class="height__table table__superright left__table"></td>
+            </tr>
+            <tr>
+              <td colspan="1" class="table__superleft left__table">М.П.</td>
+              <td class="table__superright left__table">М.П.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
